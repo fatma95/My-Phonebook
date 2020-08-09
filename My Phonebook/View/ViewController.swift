@@ -31,10 +31,7 @@ class ViewController: UIViewController {
     @IBAction func showNextView(_ sender: Any) {
         
         if !nameTF.hasText {
-            let alertController = UIAlertController(title: "Username required", message:
-                "Please enter your name to continue.", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: .default))
-            self.present(alertController, animated: true, completion: nil)
+            self.showAlert(title: "Username is required", message: "Please enter your name to continue.")
         }
         
         let storyboard = UIStoryboard(name: "ContactsList", bundle: nil)

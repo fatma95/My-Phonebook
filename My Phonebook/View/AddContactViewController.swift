@@ -87,17 +87,11 @@ class AddContactViewController: UIViewController {
         let phone = phoneTF.text ?? ""
         
         if name.isEmpty {
-            let alertController = UIAlertController(title: "Name required", message:
-                "Please enter contact name to continue.", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: .default))
-            self.present(alertController, animated: true, completion: nil)
+            self.showAlert(title: "Name is required", message: "Please enter contact name to continue.")
             return
         }
         if phone.isEmpty {
-            let alertController = UIAlertController(title: "Phone is required", message:
-                "Please enter contact phone to continue.", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: .default))
-            self.present(alertController, animated: true, completion: nil)
+            self.showAlert(title: "Phone is required", message: "Please enter contact phone to continue.")
             return
         }
         

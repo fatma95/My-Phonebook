@@ -23,6 +23,7 @@
 		FC76970724DB0BD500F0975F /* AddContact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC76970624DB0BD500F0975F /* AddContact.storyboard */; };
 		FC76970C24DB5DEB00F0975F /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */; };
 		FC7E783424DC646300B96AC0 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E783324DC646300B96AC0 /* RoundImage.swift */; };
+		FC7E783624E0569200B96AC0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E783524E0569200B96AC0 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		FC76970624DB0BD500F0975F /* AddContact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddContact.storyboard; sourceTree = "<group>"; };
 		FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		FC7E783324DC646300B96AC0 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		FC7E783524E0569200B96AC0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				FC7696FC24DA0B6700F0975F /* ImagePicker.swift */,
 				FC7696FE24DA2D5300F0975F /* RoundButton.swift */,
 				FC7E783324DC646300B96AC0 /* RoundImage.swift */,
+				FC7E783524E0569200B96AC0 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FC76970124DAFCED00F0975F /* ContactsListViewController.swift in Sources */,
 				FC76970524DB0BB100F0975F /* AddContactViewController.swift in Sources */,
 				FC7696D724D9F1C700F0975F /* SceneDelegate.swift in Sources */,
+				FC7E783624E0569200B96AC0 /* UIViewControllerExtension.swift in Sources */,
 				FC7696DF24D9F1C700F0975F /* My_Phonebook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
