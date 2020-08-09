@@ -113,7 +113,6 @@
 				FC7696E024D9F1CB00F0975F /* Assets.xcassets */,
 				FC7696E224D9F1CB00F0975F /* LaunchScreen.storyboard */,
 				FC7696E524D9F1CB00F0975F /* Info.plist */,
-				FC7696DD24D9F1C700F0975F /* My_Phonebook.xcdatamodeld */,
 			);
 			path = "My Phonebook";
 			sourceTree = "<group>";
@@ -130,6 +129,7 @@
 		FC7696F924DA063900F0975F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC7696DD24D9F1C700F0975F /* My_Phonebook.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
