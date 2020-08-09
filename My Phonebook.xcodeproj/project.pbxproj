@@ -99,6 +99,7 @@
 		FC7696D324D9F1C700F0975F /* My Phonebook */ = {
 			isa = PBXGroup;
 			children = (
+				FC7E783724E069E200B96AC0 /* Controller */,
 				FC76970A24DB5DD700F0975F /* Helpers */,
 				FC7696FB24DA0AE700F0975F /* Extensions */,
 				FC7696FA24DA064300F0975F /* View */,
@@ -133,10 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FC7696DA24D9F1C700F0975F /* Main.storyboard */,
-				FC7696D824D9F1C700F0975F /* ViewController.swift */,
-				FC76970024DAFCED00F0975F /* ContactsListViewController.swift */,
 				FC76970224DAFD0100F0975F /* ContactsList.storyboard */,
-				FC76970424DB0BB100F0975F /* AddContactViewController.swift */,
 				FC76970624DB0BD500F0975F /* AddContact.storyboard */,
 			);
 			path = View;
@@ -159,6 +157,16 @@
 				FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FC7E783724E069E200B96AC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC76970024DAFCED00F0975F /* ContactsListViewController.swift */,
+				FC76970424DB0BB100F0975F /* AddContactViewController.swift */,
+				FC7696D824D9F1C700F0975F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
