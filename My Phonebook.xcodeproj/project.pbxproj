@@ -24,6 +24,8 @@
 		FC76970C24DB5DEB00F0975F /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */; };
 		FC7E783424DC646300B96AC0 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E783324DC646300B96AC0 /* RoundImage.swift */; };
 		FC7E783624E0569200B96AC0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E783524E0569200B96AC0 /* UIViewControllerExtension.swift */; };
+		FC7E783924E06A9500B96AC0 /* ViewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E783824E06A9500B96AC0 /* ViewContactViewController.swift */; };
+		FC7E783B24E06AA700B96AC0 /* ViewContact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7E783A24E06AA700B96AC0 /* ViewContact.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		FC7E783324DC646300B96AC0 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
 		FC7E783524E0569200B96AC0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FC7E783824E06A9500B96AC0 /* ViewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewContactViewController.swift; path = "My Phonebook/Controller/ViewContactViewController.swift"; sourceTree = SOURCE_ROOT; };
+		FC7E783A24E06AA700B96AC0 /* ViewContact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewContact.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				FC7696DA24D9F1C700F0975F /* Main.storyboard */,
 				FC76970224DAFD0100F0975F /* ContactsList.storyboard */,
 				FC76970624DB0BD500F0975F /* AddContact.storyboard */,
+				FC7E783A24E06AA700B96AC0 /* ViewContact.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 		FC7E783724E069E200B96AC0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC7E783824E06A9500B96AC0 /* ViewContactViewController.swift */,
 				FC76970024DAFCED00F0975F /* ContactsListViewController.swift */,
 				FC76970424DB0BB100F0975F /* AddContactViewController.swift */,
 				FC7696D824D9F1C700F0975F /* ViewController.swift */,
@@ -250,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7E783B24E06AA700B96AC0 /* ViewContact.storyboard in Resources */,
 				FC7696E424D9F1CB00F0975F /* LaunchScreen.storyboard in Resources */,
 				FC76970324DAFD0100F0975F /* ContactsList.storyboard in Resources */,
 				FC7696E124D9F1CB00F0975F /* Assets.xcassets in Resources */,
@@ -276,6 +283,7 @@
 				FC7696FF24DA2D5300F0975F /* RoundButton.swift in Sources */,
 				FC76970C24DB5DEB00F0975F /* DatabaseHelper.swift in Sources */,
 				FC7696D924D9F1C700F0975F /* ViewController.swift in Sources */,
+				FC7E783924E06A9500B96AC0 /* ViewContactViewController.swift in Sources */,
 				FC7696D524D9F1C700F0975F /* AppDelegate.swift in Sources */,
 				FC7696FD24DA0B6700F0975F /* ImagePicker.swift in Sources */,
 				FC76970124DAFCED00F0975F /* ContactsListViewController.swift in Sources */,

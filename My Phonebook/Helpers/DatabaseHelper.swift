@@ -20,7 +20,7 @@ class DatabaseHelper {
     
    
     
-    func saveContact(name: String, nickName: String, phone: String,image: Data, gender: String, completion: ( _ contact: NSManagedObject) -> Void) {
+    func saveContact(name: String, nickName: String, phone: String,image: Data, gender: String,email: String, completion: ( _ contact: NSManagedObject) -> Void) {
         
         let entity =
                NSEntityDescription.entity(forEntityName: "Contact",
@@ -33,6 +33,7 @@ class DatabaseHelper {
         contact.setValue(phone, forKey: "phone")
         contact.setValue(gender, forKey: "gender")
         contact.setValue(image, forKey: "photo")
+        contact.setValue(email, forKey: "email")
         
         do {
             try managedContext?.save()

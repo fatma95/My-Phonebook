@@ -34,25 +34,25 @@ class ContactsListViewController: UIViewController {
     }
     
     
-  
+    
     override func viewWillAppear(_ animated: Bool) {
-         guard let appDelegate =
-           UIApplication.shared.delegate as? AppDelegate else {
-             return
-         }
-         
-         let managedContext =
-           appDelegate.persistentContainer.viewContext
-         
-         let fetchRequest =
-           NSFetchRequest<NSManagedObject>(entityName: "Contact")
-         
-         do {
-           contactList = try managedContext.fetch(fetchRequest)
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest =
+            NSFetchRequest<NSManagedObject>(entityName: "Contact")
+        
+        do {
+            contactList = try managedContext.fetch(fetchRequest)
             self.tempList = contactList
-         } catch let error as NSError {
-           print("Could not fetch. \(error), \(error.userInfo)")
-         }
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
     
 }
@@ -72,6 +72,15 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Setup the detail view controller with the item to display
+        // It should be defined as `var item: Item!` in DetailViewController
+        let storyboard = UIStoryboard(name: "ViewContact", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewContact") as! ViewContactViewController
+        viewController.contact = contactList[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -82,6 +91,8 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
             self.tableView.endUpdates()
         }
     }
+    
+    
 }
 
 
@@ -89,7 +100,7 @@ extension ContactsListViewController: AddContactDelegate {
     func addContact(contact: String, phoneNumber: String, email: String, nickName: String, image: UIImage, gender: String) {
         self.dismiss(animated: true) {
             let image = image.pngData()
-            DatabaseHelper.instance.saveContact(name: contact, nickName: nickName, phone: phoneNumber, image: image ?? Data(), gender: gender, completion: { contact in
+            DatabaseHelper.instance.saveContact(name: contact, nickName: nickName, phone: phoneNumber, image: image ?? Data(), gender: gender, email: email, completion: { contact in
                 self.contactList.append(contact)
                 self.tableView.reloadData()
             })
