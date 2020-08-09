@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contacts-->
+        <scene sceneID="tpS-Fq-7Tf">
+            <objects>
+                <viewController storyboardIdentifier="ContactsList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6xX-Kc-OQI" customClass="ContactsListViewController" customModule="My_Phonebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Nc-p4-OPF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-em-qDG">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jru-42-1n3">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jru-42-1n3" id="Mv3-DN-uuI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6xX-Kc-OQI" id="Epi-J4-vF5"/>
+                                    <outlet property="delegate" destination="6xX-Kc-OQI" id="TCd-ba-eMo"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="kW7-YL-WoJ">
+                                <rect key="frame" x="0.0" y="88" width="60" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6xX-Kc-OQI" id="O0p-rB-dOz"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BTJ-em-qDG" firstAttribute="leading" secondItem="0zU-cs-WvD" secondAttribute="leading" id="0G3-Tw-R7B"/>
+                            <constraint firstItem="BTJ-em-qDG" firstAttribute="top" secondItem="kW7-YL-WoJ" secondAttribute="bottom" id="193-Rm-hCH"/>
+                            <constraint firstItem="kW7-YL-WoJ" firstAttribute="leading" secondItem="0zU-cs-WvD" secondAttribute="leading" id="3SV-4X-q79"/>
+                            <constraint firstAttribute="trailing" secondItem="BTJ-em-qDG" secondAttribute="trailing" id="Dqd-HG-udn"/>
+                            <constraint firstItem="0zU-cs-WvD" firstAttribute="trailing" secondItem="BTJ-em-qDG" secondAttribute="trailing" id="G43-5I-Dim"/>
+                            <constraint firstItem="0zU-cs-WvD" firstAttribute="bottom" secondItem="BTJ-em-qDG" secondAttribute="bottom" id="Lsy-wU-BEn"/>
+                            <constraint firstItem="BTJ-em-qDG" firstAttribute="leading" secondItem="0zU-cs-WvD" secondAttribute="leading" id="SVO-p5-L9U"/>
+                            <constraint firstItem="kW7-YL-WoJ" firstAttribute="top" secondItem="0zU-cs-WvD" secondAttribute="top" id="T6G-mR-xby"/>
+                            <constraint firstItem="0zU-cs-WvD" firstAttribute="bottom" secondItem="BTJ-em-qDG" secondAttribute="bottom" id="iac-7V-OzB"/>
+                            <constraint firstAttribute="trailing" secondItem="kW7-YL-WoJ" secondAttribute="trailing" id="zZZ-eW-ZO0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0zU-cs-WvD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contacts" id="LYc-YO-Pvb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Fl0-41-h3n">
+                            <connections>
+                                <action selector="addContact:" destination="6xX-Kc-OQI" id="deX-U9-i6I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="kW7-YL-WoJ" id="pIl-N7-mu9"/>
+                        <outlet property="tableView" destination="BTJ-em-qDG" id="cvl-Dy-76s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llo-jI-GyX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OUp-dm-EHG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CeQ-Ey-Hfg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7vx-PH-PIU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6xX-Kc-OQI" kind="relationship" relationship="rootViewController" id="NuT-Kz-FvC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHp-mb-LI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.43478260869566" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+</document>

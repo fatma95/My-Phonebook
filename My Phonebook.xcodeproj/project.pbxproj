@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC7696D524D9F1C700F0975F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696D424D9F1C700F0975F /* AppDelegate.swift */; };
+		FC7696D724D9F1C700F0975F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696D624D9F1C700F0975F /* SceneDelegate.swift */; };
+		FC7696D924D9F1C700F0975F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696D824D9F1C700F0975F /* ViewController.swift */; };
+		FC7696DC24D9F1C700F0975F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7696DA24D9F1C700F0975F /* Main.storyboard */; };
+		FC7696DF24D9F1C700F0975F /* My_Phonebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7696DD24D9F1C700F0975F /* My_Phonebook.xcdatamodeld */; };
+		FC7696E124D9F1CB00F0975F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7696E024D9F1CB00F0975F /* Assets.xcassets */; };
+		FC7696E424D9F1CB00F0975F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7696E224D9F1CB00F0975F /* LaunchScreen.storyboard */; };
+		FC7696EF24D9F1CB00F0975F /* My_PhonebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696EE24D9F1CB00F0975F /* My_PhonebookTests.swift */; };
+		FC7696FD24DA0B6700F0975F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696FC24DA0B6700F0975F /* ImagePicker.swift */; };
+		FC7696FF24DA2D5300F0975F /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696FE24DA2D5300F0975F /* RoundButton.swift */; };
+		FC76970124DAFCED00F0975F /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76970024DAFCED00F0975F /* ContactsListViewController.swift */; };
+		FC76970324DAFD0100F0975F /* ContactsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC76970224DAFD0100F0975F /* ContactsList.storyboard */; };
+		FC76970524DB0BB100F0975F /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76970424DB0BB100F0975F /* AddContactViewController.swift */; };
+		FC76970724DB0BD500F0975F /* AddContact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC76970624DB0BD500F0975F /* AddContact.storyboard */; };
+		FC76970C24DB5DEB00F0975F /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */; };
+		FC7E783424DC646300B96AC0 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E783324DC646300B96AC0 /* RoundImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC7696EB24D9F1CB00F0975F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC7696C924D9F1C700F0975F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC7696D024D9F1C700F0975F;
+			remoteInfo = "My Phonebook";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC7696D124D9F1C700F0975F /* My Phonebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Phonebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7696D424D9F1C700F0975F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC7696D624D9F1C700F0975F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC7696D824D9F1C700F0975F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC7696DB24D9F1C700F0975F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC7696DE24D9F1C700F0975F /* My_Phonebook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Phonebook.xcdatamodel; sourceTree = "<group>"; };
+		FC7696E024D9F1CB00F0975F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC7696E324D9F1CB00F0975F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC7696E524D9F1CB00F0975F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7696EA24D9F1CB00F0975F /* My PhonebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My PhonebookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7696EE24D9F1CB00F0975F /* My_PhonebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_PhonebookTests.swift; sourceTree = "<group>"; };
+		FC7696F024D9F1CB00F0975F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7696FC24DA0B6700F0975F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FC7696FE24DA2D5300F0975F /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		FC76970024DAFCED00F0975F /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		FC76970224DAFD0100F0975F /* ContactsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactsList.storyboard; sourceTree = "<group>"; };
+		FC76970424DB0BB100F0975F /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		FC76970624DB0BD500F0975F /* AddContact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddContact.storyboard; sourceTree = "<group>"; };
+		FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		FC7E783324DC646300B96AC0 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC7696CE24D9F1C700F0975F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7696E724D9F1CB00F0975F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC7696C824D9F1C700F0975F = {
+			isa = PBXGroup;
+			children = (
+				FC7696D324D9F1C700F0975F /* My Phonebook */,
+				FC7696ED24D9F1CB00F0975F /* My PhonebookTests */,
+				FC7696D224D9F1C700F0975F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC7696D224D9F1C700F0975F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC7696D124D9F1C700F0975F /* My Phonebook.app */,
+				FC7696EA24D9F1CB00F0975F /* My PhonebookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC7696D324D9F1C700F0975F /* My Phonebook */ = {
+			isa = PBXGroup;
+			children = (
+				FC76970A24DB5DD700F0975F /* Helpers */,
+				FC7696FB24DA0AE700F0975F /* Extensions */,
+				FC7696FA24DA064300F0975F /* View */,
+				FC7696F924DA063900F0975F /* Model */,
+				FC7696D424D9F1C700F0975F /* AppDelegate.swift */,
+				FC7696D624D9F1C700F0975F /* SceneDelegate.swift */,
+				FC7696E024D9F1CB00F0975F /* Assets.xcassets */,
+				FC7696E224D9F1CB00F0975F /* LaunchScreen.storyboard */,
+				FC7696E524D9F1CB00F0975F /* Info.plist */,
+				FC7696DD24D9F1C700F0975F /* My_Phonebook.xcdatamodeld */,
+			);
+			path = "My Phonebook";
+			sourceTree = "<group>";
+		};
+		FC7696ED24D9F1CB00F0975F /* My PhonebookTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC7696EE24D9F1CB00F0975F /* My_PhonebookTests.swift */,
+				FC7696F024D9F1CB00F0975F /* Info.plist */,
+			);
+			path = "My PhonebookTests";
+			sourceTree = "<group>";
+		};
+		FC7696F924DA063900F0975F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC7696FA24DA064300F0975F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC7696DA24D9F1C700F0975F /* Main.storyboard */,
+				FC7696D824D9F1C700F0975F /* ViewController.swift */,
+				FC76970024DAFCED00F0975F /* ContactsListViewController.swift */,
+				FC76970224DAFD0100F0975F /* ContactsList.storyboard */,
+				FC76970424DB0BB100F0975F /* AddContactViewController.swift */,
+				FC76970624DB0BD500F0975F /* AddContact.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC7696FB24DA0AE700F0975F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC7696FC24DA0B6700F0975F /* ImagePicker.swift */,
+				FC7696FE24DA2D5300F0975F /* RoundButton.swift */,
+				FC7E783324DC646300B96AC0 /* RoundImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC76970A24DB5DD700F0975F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC76970B24DB5DEB00F0975F /* DatabaseHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC7696D024D9F1C700F0975F /* My Phonebook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC7696F324D9F1CB00F0975F /* Build configuration list for PBXNativeTarget "My Phonebook" */;
+			buildPhases = (
+				FC7696CD24D9F1C700F0975F /* Sources */,
+				FC7696CE24D9F1C700F0975F /* Frameworks */,
+				FC7696CF24D9F1C700F0975F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Phonebook";
+			productName = "My Phonebook";
+			productReference = FC7696D124D9F1C700F0975F /* My Phonebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC7696E924D9F1CB00F0975F /* My PhonebookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC7696F624D9F1CB00F0975F /* Build configuration list for PBXNativeTarget "My PhonebookTests" */;
+			buildPhases = (
+				FC7696E624D9F1CB00F0975F /* Sources */,
+				FC7696E724D9F1CB00F0975F /* Frameworks */,
+				FC7696E824D9F1CB00F0975F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC7696EC24D9F1CB00F0975F /* PBXTargetDependency */,
+			);
+			name = "My PhonebookTests";
+			productName = "My PhonebookTests";
+			productReference = FC7696EA24D9F1CB00F0975F /* My PhonebookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC7696C924D9F1C700F0975F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Fatma Mohamed";
+				TargetAttributes = {
+					FC7696D024D9F1C700F0975F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					FC7696E924D9F1CB00F0975F = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FC7696D024D9F1C700F0975F;
+					};
+				};
+			};
+			buildConfigurationList = FC7696CC24D9F1C700F0975F /* Build configuration list for PBXProject "My Phonebook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC7696C824D9F1C700F0975F;
+			productRefGroup = FC7696D224D9F1C700F0975F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC7696D024D9F1C700F0975F /* My Phonebook */,
+				FC7696E924D9F1CB00F0975F /* My PhonebookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC7696CF24D9F1C700F0975F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7696E424D9F1CB00F0975F /* LaunchScreen.storyboard in Resources */,
+				FC76970324DAFD0100F0975F /* ContactsList.storyboard in Resources */,
+				FC7696E124D9F1CB00F0975F /* Assets.xcassets in Resources */,
+				FC76970724DB0BD500F0975F /* AddContact.storyboard in Resources */,
+				FC7696DC24D9F1C700F0975F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7696E824D9F1CB00F0975F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC7696CD24D9F1C700F0975F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7E783424DC646300B96AC0 /* RoundImage.swift in Sources */,
+				FC7696FF24DA2D5300F0975F /* RoundButton.swift in Sources */,
+				FC76970C24DB5DEB00F0975F /* DatabaseHelper.swift in Sources */,
+				FC7696D924D9F1C700F0975F /* ViewController.swift in Sources */,
+				FC7696D524D9F1C700F0975F /* AppDelegate.swift in Sources */,
+				FC7696FD24DA0B6700F0975F /* ImagePicker.swift in Sources */,
+				FC76970124DAFCED00F0975F /* ContactsListViewController.swift in Sources */,
+				FC76970524DB0BB100F0975F /* AddContactViewController.swift in Sources */,
+				FC7696D724D9F1C700F0975F /* SceneDelegate.swift in Sources */,
+				FC7696DF24D9F1C700F0975F /* My_Phonebook.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC7696E624D9F1CB00F0975F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7696EF24D9F1CB00F0975F /* My_PhonebookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC7696EC24D9F1CB00F0975F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC7696D024D9F1C700F0975F /* My Phonebook */;
+			targetProxy = FC7696EB24D9F1CB00F0975F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC7696DA24D9F1C700F0975F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC7696DB24D9F1C700F0975F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC7696E224D9F1CB00F0975F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC7696E324D9F1CB00F0975F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC7696F124D9F1CB00F0975F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC7696F224D9F1CB00F0975F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC7696F424D9F1CB00F0975F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8Y758UDH3;
+				INFOPLIST_FILE = "My Phonebook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fatma.flickrapp.My-Phonebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC7696F524D9F1CB00F0975F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8Y758UDH3;
+				INFOPLIST_FILE = "My Phonebook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fatma.flickrapp.My-Phonebook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC7696F724D9F1CB00F0975F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "My PhonebookTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fatma.flickrapp.My-PhonebookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Phonebook.app/My Phonebook";
+			};
+			name = Debug;
+		};
+		FC7696F824D9F1CB00F0975F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "My PhonebookTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fatma.flickrapp.My-PhonebookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Phonebook.app/My Phonebook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC7696CC24D9F1C700F0975F /* Build configuration list for PBXProject "My Phonebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7696F124D9F1CB00F0975F /* Debug */,
+				FC7696F224D9F1CB00F0975F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC7696F324D9F1CB00F0975F /* Build configuration list for PBXNativeTarget "My Phonebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7696F424D9F1CB00F0975F /* Debug */,
+				FC7696F524D9F1CB00F0975F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC7696F624D9F1CB00F0975F /* Build configuration list for PBXNativeTarget "My PhonebookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC7696F724D9F1CB00F0975F /* Debug */,
+				FC7696F824D9F1CB00F0975F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC7696DD24D9F1C700F0975F /* My_Phonebook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC7696DE24D9F1C700F0975F /* My_Phonebook.xcdatamodel */,
+			);
+			currentVersion = FC7696DE24D9F1C700F0975F /* My_Phonebook.xcdatamodel */;
+			path = My_Phonebook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC7696C924D9F1C700F0975F /* Project object */;
+}
