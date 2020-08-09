@@ -23,7 +23,7 @@ class ViewContactViewController: UIViewController {
         contactNickname.text =  contact?.value(forKey: "nickname") as? String
         contactGender.text =  contact?.value(forKey: "gender") as? String
         
-        let imageData = contact?.value(forKey: "photo") as? NSData
+        guard let imageData = contact?.value(forKey: "photo") as? NSData else { return }
         contactImage.image = UIImage(data: imageData as! Data)
         // Do any additional setup after loading the view.
     }
